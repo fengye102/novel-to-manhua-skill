@@ -1,5 +1,7 @@
 # novel-to-manhua
 
+[![Validate skill](https://github.com/fengye102/novel-to-manhua-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/fengye102/novel-to-manhua-skill/actions/workflows/validate.yml)
+
 把中文小说、章节或剧情大纲改编成手机竖屏漫画的 Codex skill。它负责剧情拆解、角色与画风锁定、分镜、无字出图、后期排字和质检；**skill 是制作说明，不自带出图模型或排字软件**。
 
 ## 画风与流程
