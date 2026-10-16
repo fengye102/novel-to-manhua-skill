@@ -1,0 +1,5 @@
+/*.jpg
+/novel-to-manhua-workspace/*
+!/novel-to-manhua-workspace/evals/
+__pycache__/
+*.pyc
