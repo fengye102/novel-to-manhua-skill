@@ -45,6 +45,7 @@ if skill_file.is_file():
     letter = content.find("**后配文字。**")
     deliver = content.find("**向作者交付成品。**")
     check(draw >= 0 and letter > draw, "Workflow must draw text-free art before lettering")
+    check("左上角为后加展示序号留安全区" in content[draw:letter] and "左上角的展示序号" in content[letter:deliver], "Text-free art must reserve the top-left; numbering belongs in the lettering stage")
     check(deliver > letter and "不放进作者最终版本" in content, "Author delivery must follow lettering and exclude internal art")
     check("至少 30 页正文" in content and "封面另计" in content, "Default complete script needs at least 30 story pages, excluding the cover")
     check("火柴人" in content and "黑圆点" in content, "Reference style anchors are missing")
