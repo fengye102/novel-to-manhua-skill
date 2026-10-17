@@ -43,7 +43,9 @@ if skill_file.is_file():
         check(bool(description) and len(description) <= 1024, "Skill description must contain 1–1024 characters")
     draw = content.find("**先生成无字画面。**")
     letter = content.find("**后配文字。**")
+    deliver = content.find("**向作者交付成品。**")
     check(draw >= 0 and letter > draw, "Workflow must draw text-free art before lettering")
+    check(deliver > letter and "不放进作者最终版本" in content, "Author delivery must follow lettering and exclude internal art")
     check("火柴人" in content and "黑圆点" in content, "Reference style anchors are missing")
 
 assets = list((SKILL / "assets").glob("*.jpg"))

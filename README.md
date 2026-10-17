@@ -8,9 +8,9 @@
 
 - **参考图的省笔画法**：头脸、发型、服装主体和环境光影精绘；露出的四肢是火柴人式黑色细线，手是实心黑圆点。角色外观按[人物视觉卡](novel-to-manhua/references/character-cards.md)固定，不把手机截图的状态栏和灰色外框画进漫画。
 - **先画图，后配文字**：分镜时确定准确台词与留白位置；先生成无字、无气泡的画面并验收，再单独叠加气泡、旁白、标题、拟声词、页码和中文。改错字只改排字层，不重画整页。
-- **按任务停在合适阶段**：只要策划或分镜，就交付文字方案；要完整漫画，才继续无字底图、排字和逐页验收。缺少出图或排字工具时，明确说明已完成到哪一层。
+- **整套制作、成品交付分开**：完整任务先做本次范围的全套逐页脚本，再逐页出图、排字、归档和质检；给作者的版本只含已排字成品页，无字底图留作内部返工。只要策划或分镜，就停在文字方案；缺少出图或排字工具时，明确说明已完成到哪一层。
 
-详细规则见 [`novel-to-manhua/SKILL.md`](novel-to-manhua/SKILL.md)；四组样图的选择方法见[视觉语言与样图索引](novel-to-manhua/references/visual-language.md)。
+交付链路参考 [novel-comic-promo](https://github.com/CYU1102/novel-comic-promo)，但不沿用其人物设计、固定张数和尺寸。详细规则见 [`novel-to-manhua/SKILL.md`](novel-to-manhua/SKILL.md)；四组样图的选择方法见[视觉语言与样图索引](novel-to-manhua/references/visual-language.md)。
 
 ## 安装
 
@@ -35,22 +35,22 @@ $novel-to-manhua
 
 如需只做分镜、指定页数、沿用某组参考图或另给画风，直接在请求中说明。不要把仓库的参考图人物和台词直接搬进无关故事。
 
-## 交付结构
+## 制作工程与作者交付
 
 新作品先按自身 `Codex.md` 定规则；缺省文件分层如下（只建立实际需要的目录）：
 
 ```text
 comic-project/
 ├── Codex.md
-├── source/               # 原文与原始素材
-├── planning/             # 剧情、角色卡、逐格脚本和准确台词
-├── drafts/               # 待修中间稿
-├── art/                  # 已验收的无字底图，例如 page-01-art.png
-├── pages/                # 已排字的成品，例如 page-01.png
-└── qa/report.md          # 逐页验收记录
+├── source/               # 内部：原文与原始素材
+├── planning/             # 内部：全套剧情、角色卡、逐格脚本和准确台词
+├── drafts/               # 内部：待修中间稿
+├── art/                  # 内部：无字底图，供排字与返工使用
+├── qa/report.md          # 内部：逐页对应关系和验收记录
+└── pages/                # 作者交付：仅已排字成品，例如 page-01.png
 ```
 
-具体字段与验收点见[交付与质检](novel-to-manhua/references/delivery-and-qa.md)。仓库中的 14 张 JPG 位于 [`novel-to-manhua/assets/`](novel-to-manhua/assets/)，用作风格和人物特征证据，不是供输出时复制的现成页面。
+完整漫画交付时只分享 `pages/` 或由它生成的成品压缩包；若作者另要脚本、无字底图或提示词，再单独提供。具体字段与验收点见[交付与质检](novel-to-manhua/references/delivery-and-qa.md)。仓库中的 14 张 JPG 位于 [`novel-to-manhua/assets/`](novel-to-manhua/assets/)，用作风格和人物特征证据，不是供输出时复制的现成页面。
 
 ## 仓库校验
 
