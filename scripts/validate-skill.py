@@ -46,6 +46,7 @@ if skill_file.is_file():
     deliver = content.find("**向作者交付成品。**")
     check(draw >= 0 and letter > draw, "Workflow must draw text-free art before lettering")
     check(deliver > letter and "不放进作者最终版本" in content, "Author delivery must follow lettering and exclude internal art")
+    check("至少 30 页正文" in content and "封面另计" in content, "Default complete script needs at least 30 story pages, excluding the cover")
     check("火柴人" in content and "黑圆点" in content, "Reference style anchors are missing")
 
 assets = list((SKILL / "assets").glob("*.jpg"))
