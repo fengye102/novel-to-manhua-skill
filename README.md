@@ -6,11 +6,11 @@
 
 ## 画风与流程
 
-- **参考图的省笔画法**：头脸、发型、服装主体和环境光影精绘；露出的四肢是火柴人式黑色细线，手是实心黑圆点。角色外观按[人物视觉卡](novel-to-manhua/references/character-cards.md)固定，不把手机截图的状态栏和灰色外框画进漫画。
+- **明确的 Q 版与省笔画法**：全身人物默认约 2～3 头身，大圆头、小躯干、短肢与夸张清楚的表情；头脸、发型、服装主体和必要环境光影精绘，四肢却是火柴人式黑色细线，手是实心黑圆点。普通页保持背景清爽，不画成普通动漫或写实比例。角色外观按[人物视觉卡](novel-to-manhua/references/character-cards.md)固定，不把手机截图的状态栏和灰色外框画进漫画。
 - **先画图，后配文字**：分镜时确定准确台词与留白位置；先生成无字、无气泡的画面并验收，再单独叠加气泡、旁白、标题、拟声词、页码和中文。改错字只改排字层，不重画整页。
 - **整套制作、成品交付分开**：未指定页数的完整漫改或完整逐页剧本，默认至少拆分 30 页正文（封面另计）；情节不足时补有推进作用的细节，不重复剧情凑页。先做本次范围的全套逐页脚本，再按需出图、排字、归档和质检；给作者的成品版本只含已排字页面，无字底图留作内部返工。只要策划或分镜，就停在文字方案；缺少出图或排字工具时，明确说明已完成到哪一层。
 
-交付链路参考 [novel-comic-promo](https://github.com/CYU1102/novel-comic-promo)，但不沿用其人物设计、固定张数和尺寸。详细规则见 [`novel-to-manhua/SKILL.md`](novel-to-manhua/SKILL.md)；四组样图的选择方法见[视觉语言与样图索引](novel-to-manhua/references/visual-language.md)。
+交付链路与 Q 版提示词的可执行约束参考 [novel-comic-promo](https://github.com/CYU1102/novel-comic-promo)，但不沿用其人物设计、固定张数和尺寸。详细规则见 [`novel-to-manhua/SKILL.md`](novel-to-manhua/SKILL.md)；四组样图的选择方法见[视觉语言与样图索引](novel-to-manhua/references/visual-language.md)。
 
 ## 安装
 

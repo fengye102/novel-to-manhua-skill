@@ -48,6 +48,7 @@ if skill_file.is_file():
     check(deliver > letter and "不放进作者最终版本" in content, "Author delivery must follow lettering and exclude internal art")
     check("至少 30 页正文" in content and "封面另计" in content, "Default complete script needs at least 30 story pages, excluding the cover")
     check("火柴人" in content and "黑圆点" in content, "Reference style anchors are missing")
+    check("Q 版造型：" in content and "约 2～3 头身" in content, "Drawing prompt must specify recognizable chibi proportions")
 
 assets = list((SKILL / "assets").glob("*.jpg"))
 check(bool(assets), "No reference JPG assets found")
